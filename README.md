@@ -22,7 +22,7 @@ Pour ce projet, on avons privilégié un méthode AGILE et mis en place des list
 
 Pour chaque semaines, nous nous sommes repartis le travail à effectuer.
 
-![image alt text](readme_images/image0.png)
+![image alt text](readme_images/image_0.png)
 
 Nous nous donnions des feedbacks réguliers en rapport avec l’avancé du projet. 
 
@@ -55,7 +55,7 @@ Chaque code à convertir est choisi aléatoirement; ainsi que le type (type, for
 
 **-si le joueur se trouve devant un ennemi**
 
-![image alt text](readme_images/image1.png)
+![image alt text](readme_images/image_1.png)
 
 ### **-Ennemis :**
 
@@ -63,13 +63,13 @@ Nous n’avons malheureusement pas pu implémenter les ennemis et l’AI, faute 
 
 -Nous avions un objet 3D pour représenter les ennemis : 
 
-![image alt text](readme_images/image2.png)![image alt text](readme_images/image3.png)
+![image alt text](readme_images/image_2.png)![image alt text](readme_images/image_3.png)
 
-![image alt text](readme_images/image4.png)![image alt text](readme_images/image5.png)
+![image alt text](readme_images/image_4.png)![image alt text](readme_images/image_5.png)
 
 -Chaque ennemi affiche un nombre binaire 4 bits à convertir : 
 
-![image alt text](readme_images/image6.png)
+![image alt text](readme_images/image_6.png)
 
 -L’ennemi se serait déplacé avec un "panel" portant son code à convertir.
 
@@ -146,13 +146,13 @@ Les conversions numériques que le joueur doit pouvoir résoudre sont :
 
 • Passage d’un nombre décimal en hexadécimal
 
-![image alt text](readme_images/image7.png)
+![image alt text](readme_images/image_7.png)
 
 **Exemple de conversion : **
 
 **Il y a affichage du type de conversion à effectuer "Type de conversion"; et le chiffre à convertir “Conversion à saisir” **
 
-![image alt text](readme_images/image8.png)
+![image alt text](readme_images/image_8.png)
 
 En bas à droite, le joueur peut voir le nombre qu’il saisit au clavier.
 
@@ -169,7 +169,7 @@ Lors de la génération automatique des types de conversion et des codes pour le
 
 d) La classe Cellule
 
-### ![image alt text](readme_images/image9.png)
+### ![image alt text](readme_images/image_9.png)
 
 **A noter que nous avons "préparé le terrain" pour l’implémentation de l’IA en créant et maintenant une liste d’adjacence propre à chaque Cellule qui donne les cellules voisines accessibles (donc sans mur fermé/porte). *** * *
 
@@ -178,7 +178,7 @@ d) La classe Cellule
 
 La classe Floor représente le sol du labyrinthe, sa texture est gérée via une fonction donnant automatiquement le motif alternant 2 couleurs données en paramètre en s’ajustant à la taille totale du labyrinthe grâce à des autres paramètres de taille. 
 
-![image alt text](readme_images/image10.png)
+![image alt text](readme_images/image_10.png)
 
 ### * * *
 
@@ -201,14 +201,14 @@ Nous avons ajusté la caméra pour qu’il n’y ai aucun lags , que la minimap 
 
 **Également, l’orientation de la caméra3D s’adapte via les mouvements sur le pad ou déplacement souris. **
 
-![image alt text](readme_images/image11.png)* * *
+![image alt text](readme_images/image_11.png)* * *
 
 
 ### g)La classe Objet3D
 
 Cette classe gère le cube que nous avons assigné à la "fin" du labyrinthe.
 
-![image alt text](readme_images/image12.png)
+![image alt text](readme_images/image_12.png)
 
 * * *
 
@@ -219,11 +219,11 @@ Quand le joueur est au point d’arrivée du labyrinthe, il a accès au changeme
 
 Le cube n’est qu’une façon de montrer visuellement qu’on est à la fin. Dans la classe Game1 on connaît l’emplacement du joueur grâce à la variable **celluleCourante** et si on arrive à la même position que le cube (donc en bas à droite), le changement de map s’effectue.
 
-![image alt text](readme_images/image13.png)
+![image alt text](readme_images/image_13.png)
 
 ### Au contact du cube, on passe de la map 1 à la map 2 : 
 
-![image alt text](readme_images/image14.png)
+![image alt text](readme_images/image_14.png)
 
 La map2 correspond à un changement de niveau : Il y a plus de portes, plus de types de conversion disponibles, le labyrinthe est plus grand et le visuel du sol est différent. 
 
@@ -248,7 +248,7 @@ Nous avons décidé de représenter la minimap en entier :
 
 La minimap s’adapte directement à la taille du labyrinthe puisque nous avons changé juste l’apparence du labyrinthe et comment le joueur est représenté dans le jeu. 
 
-![image alt text](readme_images/image15.png)
+![image alt text](readme_images/image_15.png)
 
 * * *
 
@@ -267,7 +267,7 @@ Le HUD se charge de l’affichage des différents éléments : La vie, le nombre
 
 -Le nombre de point de vie du joueur (max = 100) s’affiche en bas à gauche. 
 
-![image alt text](readme_images/image16.png)
+![image alt text](readme_images/image_16.png)
 
 ### * * *
 
@@ -292,5 +292,5 @@ La classe Game1 permet :
 
 Vous pourrez le retrouver dans le dossier "Diagramme_de_classe" fournit avec le rapport et le code.
 
-![image alt text](readme_images/image17.jpg)
+![image alt text](readme_images/image_17.jpg)
 
